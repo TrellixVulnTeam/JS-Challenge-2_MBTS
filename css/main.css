@@ -1,0 +1,19 @@
+/* resets */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 1rem;
+}
+/*# sourceMappingURL=main.css.map */
