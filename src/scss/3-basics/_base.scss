@@ -1,0 +1,38 @@
+
+
+/* resets */
+* {
+    margin: 0;
+    padding: 0;
+    border:0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+
+html {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif
+    
+}
+body {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif
+    
+}
+
+
+
+h1, h2, h3, h4 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1rem;
+}
+

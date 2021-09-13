@@ -1,0 +1,10 @@
+//This file should contain any helpful sass functions. Allowing you to abstract out common formulas and behaviors in a readable way.
+//(Essentially if you need to compute a mathematical value or something)(You can also imput arguments into a function such as "$"colour")
+
+
+
+// Function for converting a px based font-size to rem.
+@function pxToRem($size) {
+    @return $size / 16px * 1rem;
+  }
+   

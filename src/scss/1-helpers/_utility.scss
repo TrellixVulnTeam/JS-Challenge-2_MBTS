@@ -1,0 +1,38 @@
+//Utility classes help us throw in some functionality into the html if needed. Use these as you feel they are useful, but don't forget about symentic markup.
+//You COULD have this functionality placed inside a mixin instead (inside css or inside html? your choice tbh).
+
+
+// *****************
+// Utility classes for hiding stuff at various viewports
+// *****************
+
+
+
+
+// *****************
+// Utility classes setting splits for tile sizes
+// *****************
+
+// Classes for size changes, 
+.set-width-full {     
+    max-width: 100%;
+}
+
+.set-width-half { // splits in half, the 5% is for easy margins
+    @media screen and (min-width:map-get($breakpoints, "tablet")) {
+        max-width: 45%;
+    }
+}
+
+.set-width-half-2 { // same as above except starts a litte wider
+    @media screen and (min-width:map-get($breakpoints, "desktop")) {
+        max-width: 45%;
+    }
+}
+
+.set-width-thirds {
+    @media screen and (min-width:map-get($breakpoints, "desktop-wide")) {
+        max-width: 30%;
+    }
+}
+

@@ -1,0 +1,52 @@
+// This should contain only varible declarations
+// (A reminder than css and sass both have their own varibles that behave very differently) 
+
+
+// *****************
+// Colours
+// *****************
+
+// Hex named colours
+$Raisin-Black: #293042;
+$indendence: #4C556B;
+$Razzmatazz: #E31B6D;
+$Ultramaine-Blue: #4361EE;
+$Carolina-Blue: #20A4F3;
+$white: #fff;
+$linkedin-blue:#2962ff;
+$github-grey: grey;
+
+
+// Descriptive colours
+$primary-background-colour: $Raisin-Black;
+$primary-font-colour: $white;
+$colourful-font-colour: $Razzmatazz;
+
+
+
+// *****************
+// Font related
+// *****************
+
+// Font weights 
+$light: 300;
+$normal: 400;
+$semibold: 500;
+$bold: 700;
+
+// font stacks
+$raleway-font-stack: "Raleway", "Raleway-Italic" , Helvetica, Verdana, sans-serif;
+
+
+// *****************
+// Sass varibles and maps
+// *****************
+
+// Sass map media queries varibles
+$breakpoints: (
+    "phablet":      576px,
+    "tablet":       768px,
+    "desktop":      992px,
+    "desktop-wide": 1200px,
+    "beyond-wide":  1400px
+);

@@ -1,0 +1,8 @@
+// Use this to define link styles, including a with over/clicked and everuthing similar
+
+a {
+    color: white;
+    &:hover {
+        color: $colourful-font-colour;
+    }
+}

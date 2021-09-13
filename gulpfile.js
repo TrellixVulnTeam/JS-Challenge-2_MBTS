@@ -4,6 +4,8 @@ Place all requires below
 const { src, dest, watch } = require('gulp');
 const compileSass = require('gulp-sass')(require('sass'));
 const sourceMaps = require('gulp-sourcemaps');
+const babel = require('gulp-babel');
+const autoprefixer = require('gulp-autoprefixer');
 
 
 //Function that compiles sass --> css + mapfiles
@@ -14,6 +16,9 @@ const bundleSass = () => {
   .pipe(sourceMaps.write(''))
   .pipe(dest('css'));
 };
+
+//function to compile js files
+
 
 
 //Default testing task

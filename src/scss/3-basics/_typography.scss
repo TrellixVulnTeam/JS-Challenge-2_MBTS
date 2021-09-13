@@ -1,0 +1,16 @@
+// This file should contain type related stuff, like @font-face declarations and style application
+// to elements that are type related only. 
+// scale, vertical rythem, font colours should all be in here
+
+
+// Font inports 
+@font-face {                     
+    font-family: Raleway;
+    src: url(/fonts/Raleway-VariableFont_wght.ttf);
+  }
+
+  @font-face {
+    font-family: Raleway-Italic;
+    src: url(/fonts/Raleway-Italic-VariableFont_wght.ttf);
+  }
+

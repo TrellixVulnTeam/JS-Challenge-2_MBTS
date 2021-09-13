@@ -1,0 +1,63 @@
+//Should contain structering/styling specific to said page that may not fit anywhere else
+
+.page-container {
+    padding: 100px;
+}
+
+
+//The form to take in the email address and submit button
+.form-wrapper {
+    border: 3px solid #1C6EA4;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 1rem;
+    margin-top: 50px;
+
+
+    //the input box itself for the email address
+    input[type=text] {
+        @include input-box-default;
+        outline: none;
+        background-color: rgba(28, 110, 164, 0);
+    }
+
+    input[type=text]:focus {
+        border: 2px solid #1c6ea4c7;
+        outline: none;
+        background-color: #0000001c;
+    }
+
+    //The submit button for the email address
+    input[type=submit] {
+        @include btn-default;
+    }
+    //hover style for the button
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+}
+
+//The wrapper for throwing all the images in
+.image-display-wrapper {
+    border: 3px solid #1C6EA4;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+    //when the images are added, 
+    .tile {
+        display: inline-block;
+        width: 400px;
+        height: 400px;
+        margin: 20px;
+    }
+
+}
+
+.btn:hover:hover {
+    background-color: #45a049;
+}

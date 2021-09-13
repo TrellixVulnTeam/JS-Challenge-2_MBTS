@@ -2,13 +2,14 @@
 <html lang="en">
 
 
-<head>    
+<head>
     <!--Basics-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <meta name="keywords" content="">
-    <meta name="description" content="Our expertise lies in Bespoke Software Development, Digital Marketing, IT Support, Web Design, Telecoms and Cyber Security.">
+    <meta name="description"
+        content="Our expertise lies in Bespoke Software Development, Digital Marketing, IT Support, Web Design, Telecoms and Cyber Security.">
     <meta name="author" content="">
     <title>Js challenge Two</title>
 
@@ -19,88 +20,74 @@
     <!--main jquery import-->
     <script src="/js/jquery-3.6.0.js"></script>
 
+    <!--axios import-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!--Js scripts written by me-->
+    <script type="text/javascript" defer src="/js/app.js"></script>
+    <script type="text/javascript" defer src="/js/image-grabber.js"></script>
+
     <!-- main style css -->
     <link rel="stylesheet" href="/css/main.css">
 </head>
 
 
-
-
 <body>
-    <!--The side nav menu-->
-    <div id="mySidenav" class="sidenav">
-        <!--Put the lists of lists below-->
-        <div class="side-menu-inner-container">
-            <ul>
-                <li class="">
-                    <a href="https://www.netmatters.co.uk/scs-web-developer-course">
-                        Training
-                    </a>
-                    <ul class="" role="menu">
-                        <li>
-                            <a href="https://www.netmatters.co.uk/train-for-a-career-in-tech">
-                                Train For A Career In Tech
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://www.netmatters.co.uk/train-for-a-career-in-tech/scion-scheme-frequently-asked-questions">
-                                SCS Frequently Asked Questions
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.netmatters.co.uk/train-for-a-career-in-tech/scion-collaborators">
-                                Scion Collaborators
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-                Latin
-                literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-                Hampden-Sydney
-                College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
-                passage, and
-                going through the cites of the word in classical literature, discovered the undoubtable source. Lorem
-                Ipsum
-                comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and
-                Evil) by
-                Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the
-                Renaissance.
-                The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-            </p>
+    <main>
+        <div class="page-container">
+            <h1>Email/Image linker</h1>
+
+
+            <div class="form-wrapper">
+                <form action="">
+                    <label for="email">Email Address:</label>
+                    <input type="text" id="email" name="email">
+                    <input type="submit" value="Submit">
+                    <button class="btn" type="button" onclick="setupTestData()">Test button</button>
+                </form>
+            </div>
+
+
+            <!--below needs to contain the styling to show the images once [pulled in]-->
+            <div id="image-parent" class="image-display-wrapper">
+                <!--Using js, insert styled image containers below, WITH the images grabbed
+                You probs wanna pull in like 12 or something, it doesnt really matter
+                specifically, you need:
+                - Have a function that grabs images (this includes the requests + promises)
+                and returns them as an array.
+                - Have a function takes in two paramters, one being the image, and another
+                being the id selecter in the dom where you wanna put the divs, then create a
+                div + image tags with the img.src being the grabbed image from the parameter
+                - -->
+
+
+
+
+
+            </div>
+
+
+
+
+
+            <!--the following button will PROPERLY trigger a function-->
+            <button class="btn" id="get-btn" type="button" onclick="">Refresh Images</button>
         </div>
-    </div>
+    </main>
 
 
 
-    <div class="page-container">
-        <p>
-            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-            Latin
-            literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-            Hampden-Sydney
-            College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
-            passage, and
-            going through the cites of the word in classical literature, discovered the undoubtable source. Lorem
-            Ipsum
-            comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and
-            Evil) by
-            Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the
-            Renaissance.
-            The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-        </p>
-    </div>
 
 
-      
 
-   <!--script tag javascript file imports below (Make sure jquery comes first) -->
-   <script type="text/javascript" src="/js/jquery-3.6.0.js"></script>
+    <footer>
+    </footer>
 
 
+    <!--script tag javascript file imports below (Make sure jquery comes first) -->
+    <script class="btn" type="text/javascript" src="/js/jquery-3.6.0.js"></script>
+
+            
 
 </body>
 </html>
