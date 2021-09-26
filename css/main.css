@@ -1,0 +1,172 @@
+.set-width-full {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .set-width-half {
+    max-width: 45%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .set-width-half-2 {
+    max-width: 45%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .set-width-thirds {
+    max-width: 30%;
+  }
+}
+
+/* resets */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.btn {
+  max-width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+a {
+  color: white;
+}
+a:hover {
+  color: #E31B6D;
+}
+
+/* resets */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  font-size: 1rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hover-background-linkedin i:hover {
+  color: #2962ff;
+}
+
+.hover-background-github i:hover {
+  color: grey;
+}
+
+.hover-image-highlight:hover {
+  opacity: 0.4;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url(/fonts/Raleway-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Raleway-Italic;
+  src: url(/fonts/Raleway-Italic-VariableFont_wght.ttf);
+}
+.page-container {
+  padding: 100px;
+}
+
+.form-wrapper {
+  border: 3px solid #1C6EA4;
+  border-radius: 10px;
+  padding: 30px;
+  font-size: 1rem;
+  margin-top: 50px;
+}
+.form-wrapper input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #1c6ea4c7;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+  background-color: rgba(28, 110, 164, 0);
+}
+.form-wrapper input[type=text]:focus {
+  border: 2px solid #1c6ea4c7;
+  outline: none;
+  background-color: #0000001c;
+}
+.form-wrapper input[type=submit] {
+  max-width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-wrapper input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.image-display-wrapper {
+  border: 3px solid #1C6EA4;
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.image-display-wrapper .tile {
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+}
+
+.btn:hover:hover {
+  background-color: #45a049;
+}
+/*# sourceMappingURL=main.css.map */

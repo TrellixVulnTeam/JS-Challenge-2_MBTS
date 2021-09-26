@@ -10,7 +10,7 @@ const autoprefixer = require('gulp-autoprefixer');
 
 //Function that compiles sass --> css + mapfiles
 const bundleSass = () => {
-  return src('sass/**/*.scss')
+  return src('src/scss/**/*.scss')
   .pipe(sourceMaps.init())
   .pipe(compileSass().on('error', compileSass.logError))
   .pipe(sourceMaps.write(''))
