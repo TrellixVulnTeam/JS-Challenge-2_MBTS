@@ -1,6 +1,6 @@
 
 
-class imageData {
+export default class imageData {
     constructor(id, author, width, height, url, download_url) {
         this.id = id;
         this.author = author;
@@ -10,3 +10,4 @@ class imageData {
         this.download_url = download_url;
     }
 }
+
