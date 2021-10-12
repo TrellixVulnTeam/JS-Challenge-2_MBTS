@@ -1,8 +1,9 @@
 //this file should contain validation for the email input only
 
 
+
 //regex function that returns an email
-function validateEmail(email) {
+export function validateEmail(email) {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
 }
@@ -18,11 +19,10 @@ export function validateInput() {
     if (validateEmail(emailAddress)) {
         //if the email is valid
         document.getElementById("email").style.borderColor = "green";
+        return true;
     } else {
         //if the email is not valid
         document.getElementById("email").style.borderColor = "red";
     }
-    return false;
-  }
-  
-  //now run event listener or whatever
+    return false;  
+}

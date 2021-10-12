@@ -3,24 +3,20 @@
 //All functions related to manipulating the tiles 
 
 
-
-//populates the tiles on the page (requires an array of data as input)
-export function populateTiles(imageData) {
-
-
-    if (imageData.length != 0) {
-        for (let i = 0; i < imageData.length; i++) {
-            //the html elements being inserted
-            let div = document.createElement("div");
-            div.classList.add("tile");
-            let img = document.createElement("img");
-            img.src = `https://picsum.photos/id/${imageData[i].id}/400/400`;
-            let parentElement = document.getElementById("image-parent");
-            parentElement.appendChild(div);
-            div.appendChild(img);
-
-        }
-    }
+//Takes in an id and creates html elements and places them under the passed param
+export function generateAndPopulateHtml(imageID, tileParent) {
+    //create the div tile
+    let div = document.createElement("div");      
+    div.classList.add("tile");  
+    div.setAttribute("id", "thisTile");
+    //create the img tag
+    let img = document.createElement("img");
+    //set the image source
+    img.src = `https://picsum.photos/id/${imageID}/400/400`;
+    //add it under the parent
+    tileParent.appendChild(div);
+    div.appendChild(img);
+    
 }
 
 //function to clear all currently loaded tiles (takes in a parent)
@@ -32,15 +28,17 @@ export function clearTiles() {
     }
 } 
 
-
-
-//run a loop and open a listener on each tile to that when clicked they can be selected
-export function setupTileSelectors() {
-    var tiles = document.getElementsByClassName("tile");
-    for (let index = 0; index < tiles.length; index++) {
-        var element = array[index];
-        element.addEventListener("click", function(){
-            console.log("this is clicked");
-        }); 
-    }
+var currentTile;
+//Pass in a tile and then add an event listener to the t
+export function addTileSelector(tile) {
+    currentTile = tile;
+    //add the listener with the function that adds the class to it "selected"
+    currentTile.addEventListener("click", selectTile);
 }
+
+//function to add the selected class to the tile
+function selectTile() {
+    currentTile.classList.add("selected")
+}
+
+

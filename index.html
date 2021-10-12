@@ -17,18 +17,20 @@
     <link rel="shortcut icon" href="/images/NetmattersLogos/favicon.ico">
     <link rel="stylesheet" href="./css/main.css">
 
+
 </head>
 
 
 <body>
     <main>
         <div class="page-container">
-            <h1>Email/Image linker</h1>
+            <h1 id="hello">Email/Image linker</h1>
             <div class="form-wrapper">
                 <form onsubmit="validate();">
                     <label for="email">Email Address:</label>
                     <input type="text" id="email" name="email">
                     <button class="btn" id="assign-btn" type="button">Assign to Email</button>
+                    <button class="btn" id="show-btn" type="button">Show all images attached to Email</button>
                 </form>
             </div>
             <!--the following button will PROPERLY trigger a function-->
@@ -36,10 +38,6 @@
 
             <!--below needs to contain the styling to show the images once [pulled in]-->
             <div id="image-parent" class="image-display-wrapper">
-
-                
-
-
 
 
 
@@ -53,9 +51,12 @@
     </footer>
 
         <!--Scripts (make sure jquery goes first)-->
-        <script src="./src/js/jquery-3.6.0.js"></script>
+        <script src="./node_modules/jquery/dist/jquery.js"></script>
         <script src="./node_modules/axios/dist/axios.js" ></script>
-        <script type="module" src="./app.js"></script>
+        <script src="./node_modules/@babel/polyfill/dist/polyfill.js"></script>
+        <script src="/transpiledJs/bundled.js"></script>
+
+        
     
 </body>
 </html>

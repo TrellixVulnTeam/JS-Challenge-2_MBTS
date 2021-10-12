@@ -102,7 +102,9 @@ a {
 }
 
 .form-wrapper {
-  border: 3px solid #1C6EA4;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #1C6EA4;
   border-radius: 10px;
   padding: 30px;
   font-size: 1rem;
@@ -118,11 +120,16 @@ a {
   box-sizing: border-box;
   outline: none;
   background-color: rgba(28, 110, 164, 0);
+  border-width: 2px;
+  border-style: solid;
+  border-color: #1c6ea4;
 }
 .form-wrapper input[type=text]:focus {
-  border: 2px solid #1c6ea4c7;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #1c6ea4;
   outline: none;
-  background-color: #0000001c;
+  background-color: rgba(28, 110, 164, 0);
 }
 .form-wrapper input[type=submit] {
   max-width: 100%;
@@ -139,13 +146,15 @@ a {
 }
 
 .image-display-wrapper {
-  border: 3px solid #1C6EA4;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #1C6EA4;
   border-radius: 10px;
   padding: 30px;
   margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .image-display-wrapper .tile {
   display: inline-block;
@@ -160,7 +169,14 @@ a {
 .image-display-wrapper .tile:hover {
   opacity: 0.8;
 }
+
 .btn:hover:hover {
   background-color: #45a049;
+}
+
+.selected {
+  border-style: solid;
+  border-color: pink;
+  border-width: 5px;
 }
 /*# sourceMappingURL=main.css.map */
