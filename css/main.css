@@ -54,7 +54,7 @@ p {
 
 .btn {
   max-width: 100%;
-  background-color: #4CAF50;
+  background-color: #FF99AF;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -97,15 +97,49 @@ a {
   font-family: Raleway-Italic;
   src: url(/fonts/Raleway-Italic-VariableFont_wght.ttf);
 }
-.page-container {
-  padding: 100px;
+html {
+  scroll-behavior: smooth;
+}
+
+#landing-page {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/src/assets/images/eberhard-grossgasteiger-NvesrDbsrL4-unsplash.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+#landing-page .intro-text {
+  margin-top: calc(100vh / 2.3);
+}
+#landing-page .intro-text h1 {
+  font-size: 3.2rem;
+  color: #293042;
+}
+#landing-page .lower-arrow-container {
+  text-align: center;
+  margin-top: calc(100vh / 2.2);
+}
+#landing-page .lower-arrow-container i {
+  color: #293042;
+  font-size: 2.5rem;
+}
+
+#application {
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 100vh;
+}
+#application h1 {
+  padding-top: 50px;
 }
 
 .form-wrapper {
   border-width: 3px;
   border-style: solid;
-  border-color: #1C6EA4;
-  border-radius: 10px;
+  border-color: #293042;
   padding: 30px;
   font-size: 1rem;
   margin-top: 50px;
@@ -115,25 +149,24 @@ a {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 2px solid #1c6ea4c7;
+  border: 2px solid #293042;
   border-radius: 4px;
   box-sizing: border-box;
   outline: none;
   background-color: rgba(28, 110, 164, 0);
   border-width: 2px;
   border-style: solid;
-  border-color: #1c6ea4;
+  border-color: #293042;
 }
 .form-wrapper input[type=text]:focus {
   border-width: 2px;
   border-style: solid;
-  border-color: #1c6ea4;
   outline: none;
-  background-color: rgba(28, 110, 164, 0);
+  border-color: #E31B6D;
 }
 .form-wrapper input[type=submit] {
   max-width: 100%;
-  background-color: #4CAF50;
+  background-color: #FF99AF;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -142,14 +175,13 @@ a {
   cursor: pointer;
 }
 .form-wrapper input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #FF99AF;
 }
 
 .image-display-wrapper {
   border-width: 3px;
   border-style: solid;
-  border-color: #1C6EA4;
-  border-radius: 10px;
+  border-color: #293042;
   padding: 30px;
   margin-top: 100px;
   display: flex;
@@ -171,7 +203,7 @@ a {
 }
 
 .btn:hover:hover {
-  background-color: #45a049;
+  background-color: #E31B6D;
 }
 
 .selected {

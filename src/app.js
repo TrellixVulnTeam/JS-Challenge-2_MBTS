@@ -44,8 +44,8 @@ function refreshImages() {
 
 
 function assignToEmail() {
-    //if the email passes AND the box has input
-    if (validateInput() == true) {
+    //if the email passes AND an image exists to be loaded
+    if (validateInput() == true && currentlyLoadedImage != null) {
 
         //grab the currently input email + image
         let currentlyInputEmail = document.getElementById("email").value;
@@ -60,7 +60,6 @@ function assignToEmail() {
             for (let i = 0; i < emailObjects.length; i++) {
                 if(emailObjects[i].email == currentlyInputEmail) {
                     //found email
-                    console.log("found " + emailObjects[i].email)
                     doesEmailExist = true;
                     foundEmailObjIndex = i;
                 }
@@ -75,11 +74,12 @@ function assignToEmail() {
         if(doesEmailExist) {
             if(!emailObjects[foundEmailObjIndex].images.includes(currentlySelectedImage)){
                 emailObjects[foundEmailObjIndex].images.push(currentlySelectedImage);
-                console.log("image is not duplicate and so has been added")
+                //image is not duplicate and so has been added
             }
             else
             {
-                console.log("image is a duplicate so has not been added")
+                //image is a duplicate so has not been added, maybe give some feed back to the user
+
             }
         }
         //if the email does not exist, add it and then add the image
@@ -100,8 +100,6 @@ function assignToEmail() {
         }
 
     }
-
-    console.log(emailObjects);
 }
 
 
